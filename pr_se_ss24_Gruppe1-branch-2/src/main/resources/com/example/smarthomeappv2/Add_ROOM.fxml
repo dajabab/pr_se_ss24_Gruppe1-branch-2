@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthomeappv2.ADD_ROOMController">
+    <children>
+        <AnchorPane layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0">
+            <children>
+                <AnchorPane layoutX="-7.0" layoutY="116.0" prefHeight="501.0" prefWidth="348.0" style="-fx-background-color: #4c5159; -fx-background-radius: 30px; -fx-border-radius: 30px;">
+                    <children>
+                        <Button fx:id="cancel_btn" layoutX="217.0" layoutY="457.0" mnemonicParsing="false" onAction="#cancelRoom" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Cancel">
+                            <font>
+                                <Font name="Arial Black" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="confirm_btn" layoutX="98.0" layoutY="457.0" mnemonicParsing="false" onAction="#confirmRoom" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Confirm">
+                            <font>
+                                <Font name="Arial Black" size="12.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="SizeOfTheRoomTextField" layoutX="28.0" layoutY="80.0" prefHeight="31.0" prefWidth="180.0" promptText="Size of the room" style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </TextField>
+                        <Button fx:id="add_device_btn" layoutX="227.0" layoutY="121.0" mnemonicParsing="false" onAction="#addDevice" prefHeight="25.0" prefWidth="32.0" style="-fx-background-color: white; -fx-background-radius: 50px; -fx-border-radius: 50px;">
+                            <graphic>
+                                <ImageView fitHeight="21.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@add.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Text layoutX="28.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add device">
+                            <font>
+                                <Font name="Arial Black" size="19.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <Text layoutX="27.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add room">
+                    <font>
+                        <Font name="Arial Black" size="25.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="BackBtn" fitHeight="20.0" fitWidth="22.0" layoutX="3.0" layoutY="32.0" onMouseClicked="#goToHomepageScene" pickOnBounds="true">
+                    <image>
+                        <Image url="@back icon.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="23.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create and add a new room to your home!" wrappingWidth="268.5318298339844">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="RoomNameTextField" layoutX="22.0" layoutY="150.0" prefHeight="31.0" prefWidth="180.0" promptText="Room Name" style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                    <font>
+                        <Font name="Arial" size="12.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <Button layoutX="-174.0" layoutY="132.0" mnemonicParsing="false" />
+    </children>
+</AnchorPane>
